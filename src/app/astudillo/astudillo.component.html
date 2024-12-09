@@ -1,31 +1,30 @@
-<br><br><br><br><br>
-<h5 class="text-light text-center pt-2">Produ</h5>
-<div class="row py-3">
-    <div class="col">
-        <table class="table table-sm table-hover">
-            <thead>
-                <tr>
-                    <th scope="col">Asesor</th>
-                    <th scope="col">CxH</th>
-                    <th scope="col">Casos Cerrados</th>
-                    <th scope="col">Casos Descartados</th>
-                    <th scope="col">Casos Transferidos</th>
-                    <th scope="col">TMO</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr *ngFor="let asesor of asesores" [ngClass]="{'tabla-titulo': asesor.nombre == 'Suma total'}">
-                    <td>{{ asesor.nombre }}</td>
-                    <!-- Condicionales para aplicar clases según el valor de cxh -->
-                    <td [ngClass]="asesor.cxhClass">
-                        {{ asesor.cxh }}
-                    </td>
-                    <td>{{ asesor.casosCerrados }}</td>
-                    <td>{{ asesor.descartados }}</td>
-                    <td>{{ asesor.transferidos }}</td>
-                    <td>{{ asesor.TMO }}</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-</div>
+<!-- <h5 class="text-light text-center pt-2">PRODU DIARIA</h5>
+    <div class="row py-3">
+        <div class="col">
+            <table class="table table-sm table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">Asesor</th>
+                        <th scope="col">CxH</th>
+                        <th scope="col">Casos Cerrados</th>
+                        <th scope="col">Casos Descartados</th>
+                        <th scope="col">Casos Transferidos</th>
+                        <th scope="col">TMO</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let asesor of asesores" [ngClass]="{'tabla-titulo': asesor.nombre == 'Suma total'}">
+                        <td>{{ asesor.nombre }}</td>
+                        
+                        <td [ngClass]="asesor.cxhClass">
+                            {{ asesor.cxh }}
+                        </td>
+                        <td>{{ asesor.casosCerrados }}</td>
+                        <td>{{ asesor.descartados }}</td>
+                        <td>{{ asesor.transferidos }}</td>
+                        <td>{{ asesor.TMO }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div> -->
