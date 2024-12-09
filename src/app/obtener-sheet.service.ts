@@ -6,6 +6,22 @@ declare const gapi: any;
   providedIn: 'root',
 })
 export class ObtenerSheetService {
+  async listMajors(sheetId: string,rango: string): Promise<Asesor[]> {
+
+    try {
+      const asesores: Asesor[] = [];
+        return asesores;
+      }
+     catch (err: any) {
+      console.error('Error fetching data:', err);
+      return [];
+    }
+  }
+}
+
+
+/* 
+export class ObtenerSheetService {
   API_KEY = 'AIzaSyAIwkB9yZMOv4GzzzQDO4PbvnQYRX4e2Kk';
   DISCOVERY_DOC = 'https://sheets.googleapis.com/$discovery/rest?version=v4';
 
@@ -75,7 +91,7 @@ export class ObtenerSheetService {
     }
   }
 }
-
+*/
 class Asesor {
   constructor(
     public nombre: string,
@@ -85,4 +101,4 @@ class Asesor {
     public transferidos: number,
     public TMO: number
   ) {}
-}
+} 
